@@ -1,0 +1,629 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Ubuntu;
+	
+
+}
+html{
+
+}
+b{
+	font-weight: 300;
+}
+button{
+	border-style: none;
+}
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+.header{
+	position: absolute; bottom: 10px; right: 10px; z-index: 1000;
+	
+	width: 100%;
+	padding-top: 113px;
+	padding-bottom: 95px;
+	
+	color: white;
+}
+.header b{
+	font-family: Ubuntu;
+font-size: 14px;
+font-weight: 700;
+line-height: 67px;
+}
+.header h1{
+	font-family: Ubuntu;
+font-size: 56px;
+font-weight: 400;
+line-height: 67px;
+}
+.header p{
+	font-family: Ubuntu;
+font-size: 24px;
+font-weight: 300;
+line-height: 67px;
+}
+.header i{
+	font-size: 120px;
+      font-weight: 400;
+line-height: 67px;
+margin-top: 70px;
+}
+.but1{
+	border: 1px solid #e3e3e3;
+	font-size: 18px;
+	margin-right: -5px;
+	outline: none;
+	padding: 0px;
+	height: 50px;
+	font-family: Ubuntu;
+	width: 160px;
+
+}
+.but{
+	border: 1px solid #e3e3e3;
+	font-size: 18px;
+	margin-right: -5px;
+	outline: none;
+	padding: 0px;
+	height: 53px;
+	font-family: Ubuntu;
+	border-radius: 0px;
+	width: 160px;
+	color: white;
+	background-color: #1abc9c;
+	border:none;
+}
+.but:hover{
+	transition: 0.5s;
+	background-color: #7A7A7A;
+	color:white;
+	border:1px solid #1abc9c;
+
+}
+.auth input[type="text"]{
+	padding-left: 25px;
+}
+.auth{
+	margin-top:  90px;
+}
+.post_head ul{
+	border-left: 1px solid #f3f3f3;  
+	margin-left: 230px;
+ 
+}
+.post_head{
+
+	padding: 15px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.19);
+}
+.post_head ul li{
+
+	list-style: none;
+	display:inline-block;
+	color: #a69999;
+	font-family: Ubuntu;
+	font-size: 20px;
+	margin-right: 32px;
+}
+.post_head ul li img{
+
+}
+.soc{
+	float: right;
+	margin-right: 250px;
+	line-height: 30px;
+}
+.soc i{
+	font-size: 27px;
+	margin-right: 25px; 
+}
+.face{
+	color: #3b5998;
+}
+.tweet{
+	color: #00aced;
+}
+.main_1{
+	
+	width:100%;
+	padding-top: 130px;
+	padding-bottom: 100px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.19);
+}
+.main_1 i{
+	color: #4c4c4c;
+
+font-size: 80px;
+margin-bottom: 50px;
+}
+.main_1 b{
+	color: #a5a5a5;
+font-family: Ubuntu;
+font-size: 15px;
+font-weight: 700;
+margin-bottom: 26px;
+}
+.main_1 p{
+	font-family: Ubuntu;
+font-size: 61px;
+
+
+/* Text style for "What we" */
+color: #4c4c4c;
+margin-bottom: 100px;
+}
+.main_1 ul li{
+	width: 250px;
+	text-align: center;
+	display: inline-block;
+
+}
+
+	.marg{
+	margin-right: 250px
+
+}
+.main_1 ul li img{
+	margin-bottom: 42px;
+}
+.main_1 ul li b{
+	color: #4c4c4c;
+font-family: Ubuntu;
+font-size: 27px;
+margin-bottom: 27px;
+}
+.main_1 ul li p{
+	color: #939598;
+font-family: Ubuntu;
+font-size: 16px;
+}
+.main_2{
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+.main_2 b{
+	color: #a5a5a5;
+font-family: Ubuntu;
+font-size: 15px;
+margin-top: 44px;
+margin-bottom: 
+}
+.main_2 img{
+	margin-bottom: 44px;
+}
+.main_2 p{
+	margin-top: 30px;
+	font-family: Ubuntu;
+font-size: 61px;
+
+color: #4c4c4c;
+}
+.slider{
+	width: 747px;
+height: 499px;
+background-color:  #F5F5F5;
+}
+.text{
+	width: 360px;
+height: 413px;
+box-shadow: 0 0 5px 1px #000000;
+}
+.text ul li{
+	list-style: none;
+}
+.main ul li{
+	display: inline-block;
+}
+.main{
+	padding-top: 136px;
+	padding-bottom: 70px;
+	background-color: #f7f7f7;
+}
+.main img{
+ 
+	margin-bottom: 46px;
+
+}	
+.main b{
+	color: #a5a5a5;
+font-family: Ubuntu;
+font-size: 15px;
+margin-bottom: 26px;
+}
+.main p{
+	font-family: Ubuntu;
+font-size: 61px;
+color: #4c4c4c;
+margin-bottom: 100px;
+}
+.main ul li b{
+
+
+
+color: #4c4c4c;
+font-family: Ubuntu;
+font-size: 27px;
+}
+.what_to_do big{
+	font-weight: bold;
+	line-height: 40px;
+	padding-left: 15px;
+	color: #000000;
+font-family: Ubuntu;
+font-size: 15px;
+width: 280px;
+
+
+
+
+}
+.what_to_do{
+	margin-top: 20px;
+	margin-right: 35px;
+}
+
+.main ul li{
+	margin-right: 30px;
+	padding-top: 40px;
+  padding-bottom: 50px;
+  height: 248px;
+	width: 360px;
+	box-shadow: 0 0 5px 1px #d2d2d2;
+background-color: #ffffff;
+}
+.wrap{margin-left: 40px;
+	width: 280px;
+    height: 40px;
+    background-color: #F3F3F3; border-bottom: 1px solid  #a5a5a5;
+}
+.wrap1{margin-left: 40px;
+	width: 280px;
+    height: 40px;
+    border-bottom: 1px solid  #a5a5a5;
+}
+.main ul li img{
+      padding-top: 50px;
+      margin-bottom: 7px;
+}
+.main ul{
+	margin-bottom: 30px;
+}
+.feat img{
+	margin-top: 100px;
+    margin-bottom: 45px;
+}
+.feat b{
+	color: #a5a5a5;
+font-family: Ubuntu;
+font-size: 14px;
+}
+.feat p{
+	margin-top: 25px;
+	font-family: Ubuntu;
+font-size: 61px;
+color: #4c4c4c;
+
+
+}
+.btn{
+	padding: 22px 41px;
+	box-shadow: 0 0 8px rgba(138, 138, 132, 0.5);
+	background-color: white;
+	font-family:'Ubuntu';
+}
+.btn-green{
+	background-color: #1abc9c;
+	color: white;	
+}
+.feat ul li img{
+	margin-right: 130px;
+}
+.feat ul li {
+	display: inline-block;
+}
+.feat ul li b{
+	color: #4c4c4c;
+font-family: Ubuntu;
+font-size: 27px;
+}
+.feat ul li p{
+	color: #939598;
+font-family: Ubuntu;
+font-size: 16px;
+text-align: left;
+}
+.align{
+	height: 314px;
+	vertical-align: bottom;
+}
+.port{
+	padding-top: 100px;
+	background-color: #f8f9fb;
+}
+.port img{
+	width: 400px;
+	height: 250px;
+	margin-bottom: -10px;
+
+}
+.opacity{
+	width: 400px;
+	height: 250px;
+	background-color: black;
+	position: absolute;
+}
+.op_text {
+	color: black;
+	font-size: 16px;
+	text-align: center;
+	height: 250px;
+	vertical-align: middle;
+	padding-top: 25px;
+}
+.youtube__1{
+	margin-right: 50px;
+	margin-top: 50px;
+	padding-bottom: 50px; 
+}
+.port img:hover{
+	transition: 0.5s;
+	opacity: 0.2;
+
+
+}
+.port img:before{
+	content: 'anything';
+
+}
+.port b{
+	color: #a5a5a5;
+font-family: Ubuntu;
+font-size: 14px;
+}
+.port p{
+	margin-top: 25px;
+	font-family: Ubuntu;
+font-size: 61px;
+
+color: #4c4c4c;
+}
+.btn__1{
+	margin-top: 100px;
+	margin-bottom: 80px;
+	font-size: 18px;
+	padding: 12px 23px;
+	background-color: #1abc9c;
+	color: white;
+}
+.btn-black{
+
+	background-color: black;
+}
+.port ul li{
+	display: inline-block; 
+	width: 400px;
+    height: 267px;
+
+}
+.likes{
+	color: white;
+   padding-top: 83px;
+   padding-bottom: 100px;
+    background-color: #141519;
+}
+.likes b{
+	color: #f9f9f9;
+font-family: Ubuntu;
+font-size: 27px;
+
+}
+.likes ul li{
+	display: inline-block;
+	margin-right: 100px;
+}
+.likes ul li p{
+	color: #f9f9f9;
+font-family: Ubuntu;
+font-size: 45px;
+margin-top: 20px;
+margin-bottom: 25px;
+}
+.likes ul li big{
+	font-size: 18px;
+}
+.likes ul {
+	margin-top: 40px;
+}
+.contact_us p{
+	font-size: 61px;
+ 	color: #a5a5a5;
+ 	margin-bottom: 30px;
+}
+.contact_us{
+	padding-top: 100px;
+}
+.contact_us b{
+	font-size: 18px;
+	color: #a5a5a5;
+	
+}
+.contact_us big{
+	color: #a5a5a5;
+	font-size: 20px;
+
+}
+.inf_contact{
+	border:2px solid  #D5D5D5;
+	outline: none;
+	padding: 5px 15px;
+	margin-bottom: 25px;
+	width: 350px;
+	font-size: 19px;
+     color: #a5a5a5; 
+     margin-right: 100px;
+}
+.contact_left {
+	float: left;
+	
+
+}
+.wrapper_contact{
+	width: 900px;
+	margin: auto;
+}
+.message{
+	outline: none;
+	padding: 5px 15px;
+	border:2px solid  #D5D5D5;
+	width: 350px;
+	height: 150px;
+	font-size: 19px;
+     color: #a5a5a5; 
+
+}
+.message:focus{
+	transition: 0.5s;
+	border:2px solid  #a5a5a5;
+}
+.inf_contact:focus{
+	transition: 0.5s;
+	border:2px solid  #a5a5a5;
+}
+.send_contact{
+	font-size: 19px;
+		outline: none;
+		 margin-left: 625px;
+ 		padding: 10px 25px;
+ 		border-style: none;
+ 		color: white;
+	 	background-color: #1abc9c;
+	 	border: 2px solid #1abc9c;
+}
+.send_contact:hover{
+	background-color: white;
+	color: #1adc9c;
+	transition: 0.5s;
+}
+.wrapper_contact{
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+.price ul li{
+
+	display: inline-block;
+	float: left;
+}
+.normal h1{
+	text-align: center;
+	color: white;
+	background-color: #1abc9c;
+	padding: 20px 40px;
+}
+.normal h1:after{
+	content: '';
+	border: 20px solid transparent;
+	border-bottom: 20px solid #007B5B;
+	position: absolute;
+	padding-top: 20px;
+	margin-left: -115px;
+}
+
+.price ul{
+	padding-top: 150px;
+	width: 850px;
+	margin: auto;
+}
+.price{
+	padding-top: 100px;
+	background-color:  #f9f9f9;
+	height: 500px;
+}
+.price p{
+	font-size: 61px;
+	color: #a5a5a5;
+}
+.bite{
+	padding: 30px 0;
+	background-color: #007B5B;
+	color: white;
+}
+.discount{
+	font-size: 14px;
+	padding-left: 10px;
+	color: #F5D511;
+	padding-bottom: 20px;
+}
+.site_price{
+	background-color:#F5D511;
+	border-radius: 15px;
+	padding: 3px 20px;
+	color: #007B5B;
+}
+.price ul li h2{
+	margin-top: 20px;
+}
+.extra h1{
+	text-align: center;
+	color: black;
+	background-color: #FFDD00;
+	padding: 50px 40px;
+
+}
+.extra{
+	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+	position: relative;
+	bottom: 60px;
+}
+.extra h1:after{
+	content: '';
+	border: 20px solid transparent;
+	border-bottom: 20px solid #007B5B;
+	position: absolute;
+	padding-top: 50px;
+	margin-left: -115px;
+}
+
+
+
+
