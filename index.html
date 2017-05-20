@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+	<script src="js.js"></script>
+	<style>
+		
+	</style>
+	<script>
+		$( document ).ready(function() {
+    scaleVideoContainer();
+    initBannerVideoSize('.video-container .poster img');
+    initBannerVideoSize('.video-container .filter');
+    initBannerVideoSize('.video-container video'); 
+});
+function scaleVideoContainer() {
+    var height = $(window).height() + 5;
+    var unitHeight = parseInt(height) + 'px';
+    $('.homepage-hero-module').css('height',unitHeight);
+}
+function initBannerVideoSize(element){
+    $(element).each(function(){
+        $(this).data('height', $(this).height());
+        $(this).data('width', $(this).width());
+    });
+    scaleBannerVideoSize(element);
+}
+function scaleBannerVideoSize(element){
+    var windowWidth = $(window).width(),
+    windowHeight = $(window).height() + 5,
+    videoWidth,
+    videoHeight;
+    $(element).each(function(){
+        var videoAspectRatio = $(this).data('height')/$(this).data('width');
+        $(this).width(windowWidth);
+        if(windowWidth < 1000){
+            videoHeight = windowHeight;
+            videoWidth = videoHeight / videoAspectRatio;
+            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+            $(this).width(videoWidth).height(videoHeight);
+        }
+        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+    });}
+$(document).ready(function(){
+    $(window).scroll(function(){
+        $('.mov').each(function(){
+            if($(this).offset().top>=$(window).scrollTop() && $(this).offset().top<$(window).scrollTop()+600){                
+                $(this).addClass('rollInUpLeft');
+            }           
+        });
+    });
+});
+$(document).ready(function(){
+    $(window).scroll(function(){
+        $('.mov2').each(function(){
+            if($(this).offset().top>=$(window).scrollTop() && $(this).offset().top<$(window).scrollTop()+600){
+                
+                $(this).addClass('slideInUp');
+            }
+           
+        });
+    });
+});
+	</script>
+
+</head>
+<body class="" slideInUp">
+<div class="homepage-hero-module">
+    <div class="video-container">
+        <div class="filter"></div>
+
+        <video autoplay loop class="fillWidth">
+            <source src="video/mp4/Fishermen-Resting.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="video/webm/Fishermen-Resting.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="poster hidden">
+            <img src="" alt="">
+        </div>
+    </div>
+
+</div><div class="header">
+		<center>
+			
+			<h1>Sea the world though our product</h1>
+
+		<br>
+		<p>Ge most conversion Rate Easily</p><i class="fa fa-play-circle-o" aria-hidden="true"></i><br>
+		<div class="auth">
+			
+		<input type="text" class="but1 name" placeholder="Your Name">
+		<input type="text" class="but1 e-mail" placeholder="Email Address"> 
+		
+			<input type="submit" class="but send" name="" id="">
+	
+		</div>
+		<p>* We don't share your personal<br>
+info with anyone Check out our <font color="#1abc9c">Policy</font>  &for more information <font color="#19bc9b">Contact Us</font>. </p>
+		</center>
+	</div>	
+	<div class="header">
+		<center>
+			
+			<h1>Sea the world though our product</h1>
+
+		<br>
+		<p>Ge most conversion Rate Easily</p><i class="fa fa-play-circle-o" aria-hidden="true"></i><br>
+		<div class="auth">
+			
+		<input type="text" class="but1 name" placeholder="Your Name">
+		<input type="text" class="but1 e-mail" placeholder="Email Address"> 
+		
+			<input type="submit" class="but send" name="" id="">
+	
+		</div>
+		<p>* We don't share your personal<br>
+info with anyone Check out our <font color="#1abc9c">Policy</font>  &for more information <font color="#19bc9b">Contact Us</font>. </p>
+		</center>
+	</div>	
+	<div class="post_head">
+
+		<ul>
+		    <li><a class="about">About</a></li>
+			<li><a class="serv" >Services</a></li>
+			<li><a class="features">Features</a></li>
+			<li><a class="portf" >Portfolio</a></li>
+			<li><a class="contacting">Contact us</a></li>
+			<li><a class="pricing">Price</a></li>
+
+			
+			<li class="soc">
+				<i class="fa fa-facebook face" aria-hidden="true"></i>
+				<i class="fa fa-twitter tweet" aria-hidden="true"></i>
+							</li>
+		</ul>
+	</div>
+	<div class="main_1 ">
+	<center>
+		<i class="fa fa-smile-o" aria-hidden="true"></i><br>
+		<b>Product Features</b>
+		<p> What we <font color="#1abc9c">do</font> </p>
+		<ul>
+			<li class="marg">
+			    <img src="image/3.png" class="animated mov" alt="">
+				<center><b>
+				Fully Responsive	
+				</b>
+				<p>Lorem ipsum dolor sit amet, consectetur 
+adipisicing elit, sed do eiusmod tempor incididunt 
+ut labore et dolore.
+					
+				</p></center>
+			</li>
+			<li  class="marg">
+			<img src="image/2.png" class="animated mov" alt="">
+			<center>	<b>
+					Easy to Customize
+				</b>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur 
+adipisicing elit, sed do eiusmod tempor incididunt 
+ut labore et dolore.
+				</p></center>
+			</li>
+			<li>
+			<img src="image/4.png" class="animated mov" alt="">
+				<center><b>
+					Direct Support
+				</b>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur 
+adipisicing elit, sed do eiusmod tempor incididunt 
+ut labore et dolore.
+				</p></center>
+			</li>
+		</ul>
+   </center>
+	</div>
+  <div class="main ">
+
+    <center>	<img src="image/7.png" class="animated mov" alt=""><br>
+  	<b>Choose your required service from here</b>
+  	<p>Services We <font color="#1abc9c">Provide</font></p>
+  	</center>
+  	<center><ul>
+  		<li>
+  			<b>Web Design</b>
+  			<div class="what_to_do">
+  				 <div class="wrap"><big> PSD TO HTML</big></div>
+  				  <div class="wrap1"><big>Adaptive Web Design</big></div>
+  				  <div class="wrap1"><big>Responsive Web Design</big></div>
+  			</div>
+  		</li>
+  		<li> <b>Web Development</b><br>
+             <img src="image/10.png" class="animated mov" alt="">
+               		</li>
+  		<li><b>Web Maintenance</b><br>
+             <img src="image/12.png" height="71px" class="animated mov" alt=""></li>
+  	</ul>
+  	<ul><li>
+  			<b>Web Design</b>
+  			<div class="what_to_do">
+  				 <div class="wrap"><big> PSD TO HTML</big></div>
+  				  <div class="wrap1"><big>Adaptive Web Design</big></div>
+  				  <div class="wrap1"><big>Responsive Web Design</big></div>
+  			</div>
+  		</li>
+  		
+  		<li> <b>Web Development</b><br>
+             <img src="image/11.png" class="animated mov" alt="">
+  		</li>
+  		<li><b>Web Maintenance</b><br>
+             <img src="image/13.png" class="animated mov" height="71px" alt=""></li>
+  	</ul></center>
+  </div>
+  <div class="feat ">
+  <center>
+  		<img src="image/atom.png" class="animated mov" alt=""><br>
+  		<b>PRODUCT FEATURES</b>
+  		<p> What Our <font color="#1abc9c">Features..</font></p>
+      <ul>
+      	<li>
+      		<iframe class="youtube__1" width="527" height="340" src="https://www.youtube.com/embed/L_LUpnjgPso" frameborder="0" allowfullscreen></iframe>
+      	</li>
+      	<li class="align">
+      		<b>Take a sneak peek at our<br>
+videos, for once.</b>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+Maiores explicabo beatae omnis modi laboriosam? Totam quae, <br>
+ab, vero tempora minus ipsam at dolores dolor, obcaecati <br>
+deleniti provident pariatur ex modi aperiam. Quae, itaque.</p>
+      	</li>
+      </ul>
+  </center>
+  </div>
+  <div class="port "><center>
+  		
+  		
+  		<p> Our <font color="#1abc9c">Works</font></p><br><br>	
+
+  		<ul><center>
+  			<li>
+  			<div class="opacity animated mov"><p class="op_text"><font color="#1abc9c">Nature Project </p></div>
+  				<img class="animated mov" src="image/portf1.jpg">
+  			</li>
+  			<li><div class="opacity animated mov"><p class="op_text"><font color="#1abc9c">Game<br> project</p></div>
+  				<img class="animated mov" src="image/portf2.jpg">
+  			</li>
+  			<li><div class="opacity animated mov"><p class="op_text"><font color="#1abc9c">Work<br> project</p></div>
+  				<img class="animated mov" src="image/portf3.jpg">
+  			</li>
+  		  	</ul>
+  		  	
+  		</center>
+  			<ul><center>
+  			<li>
+  			<div class="opacity animated mov"><p class="op_text"><font color="#1abc9c">Technical<br>  project </p></div>
+  				<img class="animated mov" src="https://0.s3.envato.com/files/226036174/000_preview.jpg">
+  			</li>
+  			<li><div class="opacity animated mov"><p class="op_text"><font color="#1abc9c">Food<br> project</p></div>
+  				<img class="animated mov" src="https://0.s3.envato.com/files/225902946/01_590x300.png">
+  			</li>
+  			<li><div class="opacity animated mov"><p class="op_text"><font color="#1abc9c">Techno store<br> project</p></div>
+  				<img class="animated mov" src="https://0.s3.envato.com/files/225907721/Theme_Preview/00_preview.jpg">
+  			</li>
+  		  	</ul>
+  		  </font>	
+  		</center>
+  </div> </center>
+
+		<center>
+			<div class="contact_us">
+				<p>Contact <font color="#1abc9c">us</font></p>
+				<b>Want get web-site?</b><br><br>
+				<big>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.<br> Lorem ipsum dolor sit amet, consectetur stuff industry through the <br>branches.</big></center>
+		<div class="wrapper_contact">	
+			<div class="contact_left">	
+				
+							<form method="post">
+							<input class="inf_contact" type="text" placeholder="NAME*"><br>
+							<input class="inf_contact" type="text" placeholder="E-MAIL*"><br>
+							<input class="inf_contact" type="text" placeholder="PHONE">				
+					
+						</form></div>
+					
+		 					
+		 				<form method="post" class="form_contact">
+		 				
+		 					<input type="text" class="message" placeholder="MESSAGE"><br>
+		 					<input type="button" class="send_contact" value="SEND">
+		 				</form>
+		 				
+		 </div>			
+			</div>
+ 	<div class="price">
+ 	<center>
+ 	<p>Price <font color="#1abc9c">list</font></p>
+ 		<ul>
+ 			<li class="normal animated mov2">
+ 				<h1>Landing Page</h1>
+ 				<div class="bite">
+ 				  <b> <strike>149,99$</strike></b><b class="discount"> 45% discount</b>
+                 <h2> Only <b class="site_price">69,99$</b></h2>
+                 </div>
+ 			</li>
+			<li class="extra animated mov2">
+				<h1>Multipage site</h1>
+ 				<div class="bite">
+ 				  <b> <strike>269,99$</strike></b><b class="discount"> 61% discount</b>
+                 <h2> Only <b class="site_price">159,99$</b></h2>
+                 </div>
+
+			</li>
+			<li class="normal animated mov2">
+ 				<h1>Internet-shop</h1>
+ 				<div class="bite">
+ 				  <b> <strike>1799,99$</strike></b><b class="discount"> 45% discount</b>
+                 <h2> Only <b class="site_price">999,99$</b></h2>
+                 </div>
+ 			</li>		
+ 			
+
+ 						
+ 				
+ 			</li>
+ 		</ul>
+ 	</div>
+ 
+  <div class="likes">
+  	<center>
+  		<b>70% People Belive Another Consumer's Opinion Posted Online</b><br>
+
+  	<ul>
+  		<li>
+  			<img class="animated mov" src="image/like1.png" >
+  			<p>
+               5000     
+  			</p><br>
+  			<big>
+  				Facebook like
+  			</big>
+  		</li>
+  		<li>
+  			<img class="animated mov" src="image/like2.png" >
+  			<p>
+  				3000
+  			</p><br>
+  			<big>
+  				Twiter Follower
+  			</big>
+  		</li>
+  		<li>
+  			<img class="animated mov" src="image/like3.png" >
+  			<p>
+  				900
+  			</p><br>
+  			<big>
+  				Happy Client
+  			</big>
+  		</li>
+  		<li>
+  			<img class="animated mov" src="image/like4.png" >
+  			<p>
+  				7000
+  			</p><br>
+  			<big>
+  				Money Earned
+  			</big>
+  		</li>
+  	</ul>  	</center>
+  </div>
+<!--   -->
+
+<script>    
+$(document).ready(function() {
+    
+    $('.serv').click(function(){
+        $('html, body').animate({scrollTop:1800}, 'slow');
+        return false;
+    });
+ 
+});
+$(document).ready(function() {
+    
+    $('.about').click(function(){
+        $('html, body').animate({scrollTop:950}, 'slow');
+        return false;
+    });
+ 
+});
+$(document).ready(function(){
+   $('.features').click(function(){
+   	   $('html, body').animate({scrollTop:3050}, 'slow');
+   	   return false;
+   })
+})
+$(document).ready(function(){
+	$('.portf').click(function(){
+		$('html, body').animate({scrollTop: 3800}, 'slow');
+	})
+})
+
+$(document).ready(function(){
+	$('.contacting').click(function(){
+		$('html, body').animate({scrollTop: 4500}, 'slow');
+	})
+})
+$(document).ready(function(){
+	$('.pricing').click(function(){
+		$('html, body').animate({scrollTop: 5200}, 'slow');
+	})
+})
+$(document).ready(function(){
+	$('b').addClass('animated');
+	$('b').addClass('mov');
+	$('p').addClass('animated');
+	$('p').addClass('mov');
+	$('big').addClass('animated');
+	$('big').addClass('mov');
+	$('img').addClass('animated');
+	$('img').addClass('mov');
+	$('li').addClass('animated');
+	$('li').addClass('mov');
+	$('input').addClass('animated');
+	$('input').addClass('mov');
+})
+$(window).scroll(function(){
+	$('.mov').each(function(){
+		var imagePos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+		if(imagePos < topOfWindow+800 ){
+				$(this).addClass('rubberBand');
+		}
+	})
+})
+
+ 
+  </script>	
+</body>
+</html>
