@@ -1,447 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-	<link rel="stylesheet" href="animate.css">
-	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-	<script src="js.js"></script>
-	<style>
-		
-	</style>
-	<script>
-		$( document ).ready(function() {
-    scaleVideoContainer();
-    initBannerVideoSize('.video-container .poster img');
-    initBannerVideoSize('.video-container .filter');
-    initBannerVideoSize('.video-container video'); 
-});
-function scaleVideoContainer() {
-    var height = $(window).height() + 5;
-    var unitHeight = parseInt(height) + 'px';
-    $('.homepage-hero-module').css('height',unitHeight);
-}
-function initBannerVideoSize(element){
-    $(element).each(function(){
-        $(this).data('height', $(this).height());
-        $(this).data('width', $(this).width());
-    });
-    scaleBannerVideoSize(element);
-}
-function scaleBannerVideoSize(element){
-    var windowWidth = $(window).width(),
-    windowHeight = $(window).height() + 5,
-    videoWidth,
-    videoHeight;
-    $(element).each(function(){
-        var videoAspectRatio = $(this).data('height')/$(this).data('width');
-        $(this).width(windowWidth);
-        if(windowWidth < 1000){
-            videoHeight = windowHeight;
-            videoWidth = videoHeight / videoAspectRatio;
-            $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
-            $(this).width(videoWidth).height(videoHeight);
-        }
-        $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
-    });}
-$(document).ready(function(){
-    $(window).scroll(function(){
-        $('.mov').each(function(){
-            if($(this).offset().top>=$(window).scrollTop() && $(this).offset().top<$(window).scrollTop()+600){                
-                $(this).addClass('rollInUpLeft');
-            }           
-        });
-    });
-});
-$(document).ready(function(){
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<script type="text/javascript" src="js.js"></script>
+
+
+</head>
+<body>
+	<div class="main_page " ></div>
+		<div class="head_main_page">
+		<img src="img/fon.png" width="100%"  alt="">
+			</div>
+
+	
+	
+	<div class="animated mov gallery">
+	<h1>ГАЛЕРЕЯ</h1>
+	<div class="animated mov gallery_2">
+		<div class="papki">
+			<ul>
+				<li>
+					<a href="#modal" onclick="$('#modal').show();">
+					<img class="animated mov2 papka papochka" src="img/papki.png" alt="">
+					<br>Лето 2017</a>
+				</li>
+				<li>
+					<a href="#modal2" onclick="$('#modal2').show();">
+					<img class="animated mov2 papochka" src="img/papki.png" alt=""><br>
+				Лето 2016</a>
+				
+				<li>
+					<a href="#modal3" onclick="$('#modal3').show();"><img class="papochka animated mov2" src="img/papki.png" alt=""><br>
+					Лето 2015</a>
+				</li>
+					<a href="#modal4" onclick="$('#modal4').show();"><li><img class="papochka" src="img/papki.png" alt="">	<br>
+					Лето 2014</a>
+				</li>			
+			</ul>
+		</div>
+	</div>
+			<h1>ПОЧЕМУ ИМЕННО МЫ?</h1>
+	          <ul class="animated mov">
+	          	<li class="first blue" >
+	          		
+	          		<img  class="animated mov2" src="img/gal1.jpg" alt="">
+	          		<div class="over over1">
+	          		<br><br><br>
+	          			<h2>Самые лучшие вожатые и поспитатели</h2>
+	          			<br><br><br>
+	          			<p>
+	          			   Мы берём на работу только высококвалифицированый сотрудников. Вы можете даже не переживать за вашого ребёнка
+	          			</p>
+	          		</div>
+
+	          	</li>
+	          	<li class="green">
+	          		<img  class="animated mov2" src="img/gal2.png" alt="">
+	          		<div class="over over2">
+	          		<br><br><br>
+	          			<h2>Уникальная программа</h2>
+	          			<br><br><br>
+	          			<p>
+	          			   Каждый год является уникальный. Поскольку наша программа делает всё возможно что бы максимально заинтересовать ребёнка!
+	          			</p>
+	          		</div>
+	          		
+	          	</li>
+	          	<li class="red">
+	          		<img  class="animated mov2" src="img/gal3.png" alt="">
+	          		<div class="over over3">
+	          		<br><br><br>
+	          			<h2>Уроки от лучший скейтеров</h2>
+	          			<br><br><br>
+	          			<p>
+	          			   Наши скейтеры - это самые лучшие скейтеры Украины.Именно они, как никто другой смогут найти правильный подход что бы обучить вашего ребёнка правильно кататься на скейтборде <a href="https://www.instagram.com/thekuzm/?hl=ru" target="_blank"> Инстаграмы скейтеров</a>
+	          			</p>
+	          		</div>
+	          	</li>
+	          	<li class="pink">
+	          		<img  class="animated mov2" src="img/gal4.png" alt="">
+	          		<div class="over over4">
+	          		<br><br><br>
+	          			<h2>Отдых возле моря</h2>
+	          			<br><br><br>
+	          			<p>
+	          			   Наш летний лагерь находиться находиться на Арабатской Стрелке вблизь Азовского моря. 
+	          			</p>
+	          		</div>
+	          	</li>
+	          	<li class="orange">
+	          		<img  class="animated mov2" src="img/gal5.png"  alt="">
+	          		<div class="over over5">
+	          		<br><br><br>
+	          			<h2>Время отдыхать вместе</h2>
+	          			<br><br><br>
+	          			<p>
+	          			   На территории нашего лагеря находится номера для отдыха вашой семьи. Поэтому вы также можете находиться на территории ДОУ Голубого Пламени и наблюдать за лагерной жизнью вашего ребёнком. 
+	          			</p>
+	          		</div>
+	          	</li>
+	          	<li class="violet">
+	          		<img  class="animated mov2" src="img/gal6.png" alt="">
+	          		<div class="over over6">
+	          		<br><br><br>
+	          			<h2>Время Вспомнить кто мы есть</h2>
+	          			<br><br><br>
+	          			<p>
+	          			  	Патриотическое воспитание является важным в формирование личности ребёнка  
+	          			</p>
+	          		</div>
+	          	</li>
+	          </ul>
+		    </div>
+	</div>
+	<h1>КАК С НАМИ СВЯЗАТЬСЯ?</h1>
+	<div class="animated mov about">
+		<div class="left animated mov2">
+		    <center><p>КОНТАКТЫ</p></center>
+			<p>+960 999 00 99</p>
+			<p>+390 999 99 99</p>
+		</div>
+		<div class="right animated mov2">
+			<p>МЫ В СОЦ. СЕТЯХ</p>
+			<center><a href="https://vk.com/goluboe_plamya" target="_blank">В</a><a target="_blank" href="https://www.facebook.com/goluboeplamya/">f</a><center>
+		</div>
+	<center>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7861.157381833348!2d34.91294336549941!3d45.844517366260284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e98d212762ab49%3A0x66ed1af0501f0be!2z0JTQntCjICLQk9C-0LvRg9Cx0L7QtSDQn9C70LDQvNGPIg!5e0!3m2!1sru!2sru!4v1506781419799" class="animated mov" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+</center>
+<aside class="modal" id="modal">
+    <header>
+       
+         <a href="" class="btn" style="float: right;">X</a>
+
+    </header>
+    <section>
+       <a href="https://vk.com/album-1189967_246931259" target="_blank">Ссылка на ВКОНТАКТЕ</a><br>
+         <a href="https://4idroid.com/zajti-vkontakte-odnoklassniki-yandex-ukraine/" target="_blank">Если вы не можете зайти в ВКОНТАКТЕ нажмите сюда</a>
+    </section>
+    <footer class="footer">
+    </footer>
+  
+</aside>
+<aside class="modal" id="modal2">
+    <header>
+       
+         <a href="" class="btn" style="float: right;">X</a>
+
+    </header>
+    <section>
+       <a href="https://vk.com/album-1189967_233398191" target="_blank">Ссылка на ВКОНТАКТЕ</a><br>
+         <a href="https://4idroid.com/zajti-vkontakte-odnoklassniki-yandex-ukraine/" target="_blank">Если вы не можете зайти в ВКОНТАКТЕ нажмите сюда</a>
+    </section>
+    <footer class="footer">
+    </footer>
+  
+</aside>
+<aside class="modal" id="modal3">
+    <header>
+       
+         <a href="" class="btn" style="float: right;">X</a>
+    </header>
+    <section>
+       <a href="https://vk.com/album-1189967_219179627" target="_blank">Ссылка на ВКОНТАКТЕ</a><br>
+         <a href="https://4idroid.com/zajti-vkontakte-odnoklassniki-yandex-ukraine/" target="_blank">Если вы не можете зайти в ВКОНТАКТЕ нажмите сюда</a>
+    </section>
+    <footer class="footer">
+    </footer>
+  
+</aside>
+
+<aside class="modal" id="modal4">
+    <header>
+       
+         <a href="" class="btn" style="float: right;">X</a>
+
+    </header>
+    <section>
+       <a href="https://vk.com/album-1189967_200980458" target="_blank">Ссылка на ВКОНТАКТЕ</a><br>
+         <a href="https://4idroid.com/zajti-vkontakte-odnoklassniki-yandex-ukraine/" target="_blank">Если вы не можете зайти в ВКОНТАКТЕ нажмите сюда</a>
+    </section>
+    <footer class="footer">
+    </footer>
+   </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+  	$(document).ready(function(){
     $(window).scroll(function(){
         $('.mov2').each(function(){
             if($(this).offset().top>=$(window).scrollTop() && $(this).offset().top<$(window).scrollTop()+600){
-                
-                $(this).addClass('slideInUp');
+                $('fadeIn').removeClass('fadeIn');
+                $(this).addClass('fadeIn');
             }
-           
+            
         });
     });
 });
-	</script>
-
-</head>
-<body class="" slideInUp">
-<div class="homepage-hero-module">
-    <div class="video-container">
-        <div class="filter"></div>
-
-        <video autoplay loop class="fillWidth">
-            <source src="video/mp4/Fishermen-Resting.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            <source src="video/webm/Fishermen-Resting.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-									     <img src="https://w-dog.ru/wallpapers/10/6/456572274870272/more-lodka-volny-voda-mir.jpg"></img>							     
-        </video>
-        <div class="poster hidden">
-            <img src="" alt="">
-        </div>
-    </div>
-
-</div><div class="header">
-		<center>
-			
-			<h1>Sea the world though our product</h1>
-
-		<br>
-		<p>Ge most conversion Rate Easily</p><i class="fa fa-play-circle-o" aria-hidden="true"></i><br>
-		<div class="auth">
-			
-		<input type="text" class="but1 name" placeholder="Your Name">
-		<input type="text" class="but1 e-mail" placeholder="Email Address"> 
-		
-			<input type="submit" class="but send" name="" id="">
-	
-		</div>
-		<p>* We don't share your personal<br>
-info with anyone Check out our <font color="#1abc9c">Policy</font>  &for more information <font color="#19bc9b">Contact Us</font>. </p>
-		</center>
-	</div>	
-	<div class="header">
-		<center>
-			
-			<h1>Sea the world though our product</h1>
-
-		<br>
-		<p>Ge most conversion Rate Easily</p><i class="fa fa-play-circle-o" aria-hidden="true"></i><br>
-		<div class="auth">
-			
-		<input type="text" class="but1 name" placeholder="Your Name">
-		<input type="text" class="but1 e-mail" placeholder="Email Address"> 
-		
-			<input type="submit" class="but send" name="" id="">
-	
-		</div>
-		<p>* We don't share your personal<br>
-info with anyone Check out our <font color="#1abc9c">Policy</font>  &for more information <font color="#19bc9b">Contact Us</font>. </p>
-		</center>
-	</div>	
-	<div class="post_head">
-
-		<ul>
-		    <li><a class="about">About</a></li>
-			<li><a class="serv" >Services</a></li>
-			<li><a class="features">Features</a></li>
-			<li><a class="portf" >Portfolio</a></li>
-			<li><a class="contacting">Contact us</a></li>
-			<li><a class="pricing">Price</a></li>
-
-			
-			<li class="soc">
-				<i class="fa fa-facebook face" aria-hidden="true"></i>
-				<i class="fa fa-twitter tweet" aria-hidden="true"></i>
-							</li>
-		</ul>
-	</div>
-	<div class="main_1 ">
-	<center>
-		<i class="fa fa-smile-o" aria-hidden="true"></i><br>
-		<b>Product Features</b>
-		<p> What we <font color="#1abc9c">do</font> </p>
-		<ul>
-			<li class="marg">
-			    <img src="image/3.png" class="animated mov" alt="">
-				<center><b>
-				Fully Responsive	
-				</b>
-				<p>Lorem ipsum dolor sit amet, consectetur 
-adipisicing elit, sed do eiusmod tempor incididunt 
-ut labore et dolore.
-					
-				</p></center>
-			</li>
-			<li  class="marg">
-			<img src="image/2.png" class="animated mov" alt="">
-			<center>	<b>
-					Easy to Customize
-				</b>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur 
-adipisicing elit, sed do eiusmod tempor incididunt 
-ut labore et dolore.
-				</p></center>
-			</li>
-			<li>
-			<img src="image/4.png" class="animated mov" alt="">
-				<center><b>
-					Direct Support
-				</b>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur 
-adipisicing elit, sed do eiusmod tempor incididunt 
-ut labore et dolore.
-				</p></center>
-			</li>
-		</ul>
-   </center>
-	</div>
-  <div class="main ">
-
-    <center>	<img src="image/7.png" class="animated mov" alt=""><br>
-  	<b>Choose your required service from here</b>
-  	<p>Services We <font color="#1abc9c">Provide</font></p>
-  	</center>
-  	<center><ul>
-  		<li>
-  			<b>Web Design</b>
-  			<div class="what_to_do">
-  				 <div class="wrap"><big> PSD TO HTML</big></div>
-  				  <div class="wrap1"><big>Adaptive Web Design</big></div>
-  				  <div class="wrap1"><big>Responsive Web Design</big></div>
-  			</div>
-  		</li>
-  		<li> <b>Web Development</b><br>
-             <img src="image/10.png" class="animated mov" alt="">
-               		</li>
-  		<li><b>Web Maintenance</b><br>
-             <img src="image/12.png" height="71px" class="animated mov" alt=""></li>
-  	</ul>
-  	<ul><li>
-  			<b>Web Design</b>
-  			<div class="what_to_do">
-  				 <div class="wrap"><big> PSD TO HTML</big></div>
-  				  <div class="wrap1"><big>Adaptive Web Design</big></div>
-  				  <div class="wrap1"><big>Responsive Web Design</big></div>
-  			</div>
-  		</li>
-  		
-  		<li> <b>Web Development</b><br>
-             <img src="image/11.png" class="animated mov" alt="">
-  		</li>
-  		<li><b>Web Maintenance</b><br>
-             <img src="image/13.png" class="animated mov" height="71px" alt=""></li>
-  	</ul></center>
-  </div>
-  <div class="feat ">
-  <center>
-  		<img src="image/atom.png" class="animated mov" alt=""><br>
-  		<b>PRODUCT FEATURES</b>
-  		<p> What Our <font color="#1abc9c">Features..</font></p>
-      <ul>
-      	<li>
-      		<iframe class="youtube__1" width="527" height="340" src="https://www.youtube.com/embed/L_LUpnjgPso" frameborder="0" allowfullscreen></iframe>
-      	</li>
-      	<li class="align">
-      		<b>Take a sneak peek at our<br>
-videos, for once.</b>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-Maiores explicabo beatae omnis modi laboriosam? Totam quae, <br>
-ab, vero tempora minus ipsam at dolores dolor, obcaecati <br>
-deleniti provident pariatur ex modi aperiam. Quae, itaque.</p>
-      	</li>
-      </ul>
-  </center>
-  </div>
-  <div class="port "><center>
-  		
-  		
-  		<p> Our <font color="#1abc9c">Works</font></p><br><br>	
-
-  		<ul><center>
-  			<li>
-  			<div class="opacity animated mov"><p class="op_text"><font color="#1abc9c">Nature Project </p></div>
-  				<img class="animated mov" src="image/portf1.jpg">
-  			</li>
-  			<li><div class="opacity animated mov"><p class="op_text"><font color="#1abc9c">Game<br> project</p></div>
-  				<img class="animated mov" src="image/portf2.jpg">
-  			</li>
-  			<li><div class="opacity animated mov"><p class="op_text"><font color="#1abc9c">Work<br> project</p></div>
-  				<img class="animated mov" src="image/portf3.jpg">
-  			</li>
-  		  	</ul>
-  		  	
-  		</center>
-  			<ul><center>
-  			<li>
-  			<div class="opacity animated mov"><p class="op_text"><font color="#1abc9c">Technical<br>  project </p></div>
-  				<img class="animated mov" src="https://0.s3.envato.com/files/226036174/000_preview.jpg">
-  			</li>
-  			<li><div class="opacity animated mov"><p class="op_text"><font color="#1abc9c">Food<br> project</p></div>
-  				<img class="animated mov" src="https://0.s3.envato.com/files/225902946/01_590x300.png">
-  			</li>
-  			<li><div class="opacity animated mov"><p class="op_text"><font color="#1abc9c">Techno store<br> project</p></div>
-  				<img class="animated mov" src="https://0.s3.envato.com/files/225907721/Theme_Preview/00_preview.jpg">
-  			</li>
-  		  	</ul>
-  		  </font>	
-  		</center>
-  </div> </center>
-
-		<center>
-			<div class="contact_us">
-				<p>Contact <font color="#1abc9c">us</font></p>
-				<b>Want get web-site?</b><br><br>
-				<big>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.<br> Lorem ipsum dolor sit amet, consectetur stuff industry through the <br>branches.</big></center>
-		<div class="wrapper_contact">	
-			<div class="contact_left">	
-				
-							<form method="post">
-							<input class="inf_contact" type="text" placeholder="NAME*"><br>
-							<input class="inf_contact" type="text" placeholder="E-MAIL*"><br>
-							<input class="inf_contact" type="text" placeholder="PHONE">				
-					
-						</form></div>
-					
-		 					
-		 				<form method="post" class="form_contact">
-		 				
-		 					<input type="text" class="message" placeholder="MESSAGE"><br>
-		 					<input type="button" class="send_contact" value="SEND">
-		 				</form>
-		 				
-		 </div>			
-			</div>
- 	<div class="price">
- 	<center>
- 	<p>Price <font color="#1abc9c">list</font></p>
- 		<ul>
- 			<li class="normal animated mov2">
- 				<h1>Landing Page</h1>
- 				<div class="bite">
- 				  <b> <strike>149,99$</strike></b><b class="discount"> 45% discount</b>
-                 <h2> Only <b class="site_price">69,99$</b></h2>
-                 </div>
- 			</li>
-			<li class="extra animated mov2">
-				<h1>Multipage site</h1>
- 				<div class="bite">
- 				  <b> <strike>269,99$</strike></b><b class="discount"> 61% discount</b>
-                 <h2> Only <b class="site_price">159,99$</b></h2>
-                 </div>
-
-			</li>
-			<li class="normal animated mov2">
- 				<h1>Internet-shop</h1>
- 				<div class="bite">
- 				  <b> <strike>1799,99$</strike></b><b class="discount"> 45% discount</b>
-                 <h2> Only <b class="site_price">999,99$</b></h2>
-                 </div>
- 			</li>		
- 			
-
- 						
- 				
- 			</li>
- 		</ul>
- 	</div>
- 
-  <div class="likes">
-  	<center>
-  		<b>70% People Belive Another Consumer's Opinion Posted Online</b><br>
-
-  	<ul>
-  		<li>
-  			<img class="animated mov" src="image/like1.png" >
-  			<p>
-               5000     
-  			</p><br>
-  			<big>
-  				Facebook like
-  			</big>
-  		</li>
-  		<li>
-  			<img class="animated mov" src="image/like2.png" >
-  			<p>
-  				3000
-  			</p><br>
-  			<big>
-  				Twiter Follower
-  			</big>
-  		</li>
-  		<li>
-  			<img class="animated mov" src="image/like3.png" >
-  			<p>
-  				900
-  			</p><br>
-  			<big>
-  				Happy Client
-  			</big>
-  		</li>
-  		<li>
-  			<img class="animated mov" src="image/like4.png" >
-  			<p>
-  				7000
-  			</p><br>
-  			<big>
-  				Money Earned
-  			</big>
-  		</li>
-  	</ul>  	</center>
-  </div>
-<!--   -->
-
-<script>    
-$(document).ready(function() {
-    
-    $('.serv').click(function(){
-        $('html, body').animate({scrollTop:1800}, 'slow');
-        return false;
+  	  	$(document).ready(function(){
+    $(window).scroll(function(){
+        $('.mov').each(function(){
+            if($(this).offset().top>=$(window).scrollTop() && $(this).offset().top<$(window).scrollTop()+600){
+                $('lightSpeedIn').removeClass('lightSpeedIn');
+                $(this).addClass('lightSpeedIn');
+            }
+            
+        });
     });
- 
-});
-$(document).ready(function() {
-    
-    $('.about').click(function(){
-        $('html, body').animate({scrollTop:950}, 'slow');
-        return false;
-    });
- 
-});
-$(document).ready(function(){
-   $('.features').click(function(){
-   	   $('html, body').animate({scrollTop:3050}, 'slow');
-   	   return false;
-   })
-})
-$(document).ready(function(){
-	$('.portf').click(function(){
-		$('html, body').animate({scrollTop: 3800}, 'slow');
-	})
-})
 
-$(document).ready(function(){
-	$('.contacting').click(function(){
-		$('html, body').animate({scrollTop: 4500}, 'slow');
-	})
-})
-$(document).ready(function(){
-	$('.pricing').click(function(){
-		$('html, body').animate({scrollTop: 5200}, 'slow');
-	})
-})
-$(document).ready(function(){
-	$('b').addClass('animated');
-	$('b').addClass('mov');
-	$('p').addClass('animated');
-	$('p').addClass('mov');
-	$('big').addClass('animated');
-	$('big').addClass('mov');
-	$('img').addClass('animated');
-	$('img').addClass('mov');
-	$('li').addClass('animated');
-	$('li').addClass('mov');
-	$('input').addClass('animated');
-	$('input').addClass('mov');
-})
-$(window).scroll(function(){
-	$('.mov').each(function(){
-		var imagePos = $(this).offset().top;
-		var topOfWindow = $(window).scrollTop();
-		if(imagePos < topOfWindow+800 ){
-				$(this).addClass('rubberBand');
-		}
-	})
-})
+ $('#modal').hide(); 
+  $('#modal2').hide();  
+
+ $('#modal3').hide();  
+
+ $('#modal4').hide(); 
+
+$('.over').hide();
 
  
-  </script>	
+	$('.blue').hover(function(showBac1){
+		if ($(".over1").is(":hidden")) {
+        $(".over1").slideDown("slow");
+      } else {
+        $(".over1").slideUp("slow");
+      }
+	})
+	$('.green').hover(function(showBac1){
+		if ($(".over2").is(":hidden")) {
+        $(".over2").slideDown("slow");
+      } else {
+        $(".over2").slideUp("slow");
+      }
+	})
+	$('.red').hover(function(showBac1){
+		if ($(".over3").is(":hidden")) {
+        $(".over3").slideDown("slow");
+      } else {
+        $(".over3").slideUp("slow");
+      }
+	})
+		$('.pink').hover(function(showBac1){
+		if ($(".over4").is(":hidden")) {
+        $(".over4").slideDown("slow");
+      } else {
+        $(".over4").slideUp("slow");
+      }
+	})
+			$('.orange').hover(function(showBac1){
+		if ($(".over5").is(":hidden")) {
+        $(".over5").slideDown("slow");
+      } else {
+        $(".over5").slideUp("slow");
+      }
+	})
+					$('.violet').hover(function(showBac1){
+		if ($(".over6").is(":hidden")) {
+        $(".over6").slideDown("slow");
+      } else {
+        $(".over6").slideUp("slow");
+      }
+	})
+
+
+
+
+});
+  </script>
+</aside>
 </body>
 </html>
