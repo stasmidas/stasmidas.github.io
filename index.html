@@ -48,10 +48,11 @@
 		</div>
 	</div>
 			<h1>ПОЧЕМУ ИМЕННО МЫ?</h1>
+			<div class="gallery_2"></div>
 	          <ul class="animated mov">
-	          	<li class="first blue" >
+	          	<li class="animated mov2 first blue" >
 	          		
-	          		<img  class="animated mov2" src="img/gal1.jpg" alt="">
+	          		<img  class="animated mov2 wid" src="img/gal1.png" alt="">	
 	          		<div class="over over1">
 	          		<br><br><br>
 	          			<h2>Самые лучшие вожатые и поспитатели</h2>
@@ -63,7 +64,7 @@
 
 	          	</li>
 	          	<li class="green">
-	          		<img  class="animated mov2" src="img/gal2.png" alt="">
+	          		<img  class="animated mov2 wid" src="img/gal2.png" alt="">
 	          		<div class="over over2">
 	          		<br><br><br>
 	          			<h2>Уникальная программа</h2>
@@ -75,7 +76,7 @@
 	          		
 	          	</li>
 	          	<li class="red">
-	          		<img  class="animated mov2" src="img/gal3.png" alt="">
+	          		<img  class="animated mov2 wid" src="img/gal3.png" alt="">
 	          		<div class="over over3">
 	          		<br><br><br>
 	          			<h2>Уроки от лучший скейтеров</h2>
@@ -86,7 +87,7 @@
 	          		</div>
 	          	</li>
 	          	<li class="pink">
-	          		<img  class="animated mov2" src="img/gal4.png" alt="">
+	          		<img  class="animated mov2 wid" src="img/gal4.png" alt="">
 	          		<div class="over over4">
 	          		<br><br><br>
 	          			<h2>Отдых возле моря</h2>
@@ -97,7 +98,7 @@
 	          		</div>
 	          	</li>
 	          	<li class="orange">
-	          		<img  class="animated mov2" src="img/gal5.png"  alt="">
+	          		<img  class="animated mov2 wid" src="img/gal5.png"  alt="">
 	          		<div class="over over5">
 	          		<br><br><br>
 	          			<h2>Время отдыхать вместе</h2>
@@ -108,7 +109,7 @@
 	          		</div>
 	          	</li>
 	          	<li class="violet">
-	          		<img  class="animated mov2" src="img/gal6.png" alt="">
+	          		<img  class="animated mov2 wid" src="img/gal6.png" alt="">
 	          		<div class="over over6">
 	          		<br><br><br>
 	          			<h2>Время Вспомнить кто мы есть</h2>
@@ -120,6 +121,7 @@
 	          	</li>
 	          </ul>
 		    </div>
+		   </div>  	
 	</div>
 	<h1>КАК С НАМИ СВЯЗАТЬСЯ?</h1>
 	<div class="animated mov about">
@@ -211,6 +213,17 @@
 
 
   <script>
+  var width = screen.width, w = width / 3, h = w / 1.2;
+  w = Math.floor(w);
+  h = Math.round(h);
+
+$('.wid').css('width', w);
+$('.wid').css('height', h);
+$('.over').css('width', w);
+$('.over').css('height', h);
+$('.papochka').css('width', width*0.19);
+$('.papochka').css('height', (width*0.19)*0.57);
+
   	$(document).ready(function(){
     $(window).scroll(function(){
         $('.mov2').each(function(){
