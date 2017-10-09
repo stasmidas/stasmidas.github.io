@@ -1,0 +1,263 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Russo+One&subset=cyrillic,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Ruslan+Display');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+.main_page{
+
+
+}
+.head_main_page img{
+	margin-top: -100px;
+    width:100%;
+    height:auto;
+	
+}
+
+.head_main_page ul li a{
+	color: #0072fe;
+	text-decoration: none;
+}
+.head_main_page ul li a:hover{
+text-shadow: 5px -1px 2px rgba(154, 150, 150, 1);
+transition: 0.5s;
+}
+.head_main_page ul{
+	position: absolute;
+		width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgba(322,322,322,0.5);
+}
+.img{
+	position: relative;
+	margin-top: 770px;
+	width: 100%;
+}
+.photo{
+		position: relative;
+	
+	width: 100%;
+	height: 100%;
+}
+.head_main_page ul li{
+	position: relative;
+	display: inline-block;
+	list-style: none;
+	margin-right: 44px;
+	margin-left: 44px; 
+	color: #0072fe;
+font-family: 'Ruslan Display', cursive;
+font-size: 19px;
+font-weight: 400;
+
+}
+.gallery{
+	margin-top: -10px;
+	width: 100%;
+
+}
+.gallery ul li{
+	
+	position:relative;
+	display: inline-block;
+}
+
+
+
+
+.gallery ul li img{
+margin: -3px;
+}
+
+
+	.over1{
+		background-color: #2D9CEC;
+	}
+	.over2{
+		background-color: #47FE36;
+	}
+	.over3{
+		background-color: #E63733;
+	}
+	.over4{
+		background-color: #D20868;
+	}
+	.over5{
+		background-color: #F49434;
+	}
+	.over6{
+		background-color: #7F1BDE;
+	}
+	.over{
+	position: absolute;
+	margin-right: 25px; 
+	opacity: 0.8;
+	margin-left: -5px;
+	top: 1px;
+	margin-top:-6px;
+ 
+}
+.over h2{
+	font-family: 'Russo One';
+	text-align: center;
+	color: white;
+	font-size: 17px;
+	vertical-align: center;
+}
+
+.over p{
+	font-family: 'Russo One';
+	text-align: center;
+	color: white;
+	font-size: 10px;
+
+	vertical-align: center;
+}
+
+.about p{
+	
+color: #ffffff;
+font-family: "Russo One";
+font-size: 24px;
+}
+.about b{
+	
+color: #ffffff;
+font-family: "Russo One";
+font-size: 24px;
+}
+.about{
+    background-size: 100%;
+	background: url(img/fon2.png) no-repeat;
+
+}
+.left{
+	margin-top: 50px;
+	margin-left: 50px;
+	float: left;
+}
+
+.right{
+
+	margin-top: 50px;
+	
+	float: right;
+}
+.right a{
+	color: #ffffff;
+font-family: "Russo One";
+font-size: 24px;
+text-decoration: none;
+      padding: 0 75px; 
+}
+.otziv{
+	margin-top: 50px;
+	width: 100%;
+}
+iframe{
+	margin-top: 100px;
+	padding-bottom: 100px;
+}
+h1{	
+	text-align: center;
+	position: relative;
+	width: 100%;
+	background-color:#2D9CEC;
+	padding:20px 0;
+	font-size: 24px;
+	color: white;
+	font-family: 'Russo One'; 
+}
+.papki{
+	
+	width: 100%;
+	padding-bottom: 100px;
+	
+	background: url(img/fon3.png) no-repeat; 
+}
+
+.papki ul li{
+	display: inline-block;
+	margin: 10px;
+
+}
+.papki ul{
+	width:100%;	
+	
+}
+
+.papki ul li a{
+	font-family: 'Poiret One', cursive;
+	font-size: 25px;
+	color: white;
+	padding-top: 40px;
+	text-align: center;
+	text-decoration: none;
+}
+.modal {
+    background: #fff;
+ 
+  
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    	float: center;
+    border-radius: 5px;
+    box-shadow: 0 3px 7px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 3px 7px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 3px 7px rgba(0,0,0,.25);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+/* Активация модального окна в состоянии :target */
+.modal:target {
+    top: 50%;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+.modal header, .modal footer {
+    background: #f7f7f7;
+    border-bottom: 1px solid #e7e7e7;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+}
+.modal footer {
+    border:none;
+    border-top: 1px solid #e7e7e7;
+    border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+}
+.modal section, .modal header, .modal footer {
+    padding: 15px;
+    z-index: 200;
+    font-family: 'Comfortaa', cursive;
+}
+.modal h2 {
+    margin: 0;
+}
+.modal .btn {
+    float: right;
+    color: black;
+    font-size: 11px;
+    cursor: pointer;
+
+}
+.first{
+
+}
+
+
+
+
+
+   
