@@ -9,6 +9,9 @@
 
 
 }
+iframe{
+float:right;	
+}	
 .head_main_page img{
 	margin-top: -100px;
     width:100%;
