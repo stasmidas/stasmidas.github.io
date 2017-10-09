@@ -27,18 +27,18 @@
 				<li>
 					<a href="#modal" onclick="$('#modal').show();">
 					<img class="animated mov2 papka papochka" src="img/papki.png" alt="">
-					<br>Лето <br>2017</a>
+					<br><br>Лето <br>2017</a>
 				</li>
 				<li>
 					<a href="#modal2" onclick="$('#modal2').show();">
-					<img class="animated mov2 papochka" src="img/papki.png" alt=""><br>
+					<img class="animated mov2 papochka" src="img/papki.png" alt=""><br><br>
 				Лето <br>2016</a>
 				
 				<li>
-					<a href="#modal3" onclick="$('#modal3').show();"><img class="papochka animated mov2" src="img/papki.png" alt=""><br>
+					<a href="#modal3" onclick="$('#modal3').show();"><img class="papochka animated mov2" src="img/papki.png" alt=""><br><br>
 					Лето <br>2015</a>
 				</li>
-					<a href="#modal4" onclick="$('#modal4').show();"><li><img class="papochka" src="img/papki.png" alt="">	<br>
+					<a href="#modal4" onclick="$('#modal4').show();"><li><img class="papochka" src="img/papki.png" alt=""><br>	<br>
 					Лето<br> 2014</a>
 				</li></center>			
 			</ul>
@@ -212,10 +212,11 @@
 
 
   <script>
-  var width = screen.width, w = width * 0.51, h = w / 1.2;
+  var width = screen.width, w = width * 0.5, h = w / 1.2;
   w = Math.floor(w);
   h = Math.round(h);
 
+$('.gallery').css('width', width);
 $('.wid').css('width', w);
 $('.wid').css('height', h);
 $('.over').css('width', w);
@@ -225,23 +226,13 @@ $('.papochka').css('height', (width*0.4)*0.57);
 $('.papki').css('width', width);
 
 
-  	$(document).ready(function(){
-    $(window).scroll(function(){
-        $('.mov2').each(function(){
-            if($(this).offset().top>=$(window).scrollTop() && $(this).offset().top<$(window).scrollTop()+600){
-                $('fadeIn').removeClass('fadeIn');
-                $(this).addClass('fadeIn');
-            }
-            
-        });
-    });
-});
+
   	  	$(document).ready(function(){
     $(window).scroll(function(){
         $('.mov').each(function(){
             if($(this).offset().top>=$(window).scrollTop() && $(this).offset().top<$(window).scrollTop()+600){
-                $('lightSpeedIn').removeClass('lightSpeedIn');
-                $(this).addClass('lightSpeedIn');
+                $('lightSpeedIn').removeClass('asdasd');
+                $(this).addClass('asdas');
             }
             
         });
