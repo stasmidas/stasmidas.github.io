@@ -60,6 +60,12 @@ font-weight: 400;
 
 
 }
+.gallery ul {
+	margin-top: -10px;
+	width: 100%;
+
+
+}
 .gallery ul li{
 	
 	position:relative;
@@ -70,7 +76,7 @@ font-weight: 400;
 
 
 .gallery ul li img{
-margin: -2px;
+margin: -4px;
 }
 
 
