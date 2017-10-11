@@ -217,10 +217,15 @@
 
   <script>
   var width = screen.width, w = width * 0.50, h = w / 1.2;
-	
+height = screen.height;	
   w = Math.floor(w);
   h = Math.round(h);
-
+if(width<height){
+	$(.aaas).attr('src', 'img/mobile1.png');	
+}
+	  if(width>height){
+	$(.aaas).attr('src', 'img/fon1.png');	
+}
 $('.gallery').css('width', width);
 $('.wid').css('width', w+5);
 	  $('iframe').css('width',width);
@@ -232,13 +237,6 @@ $('.over').css('height', h);
 $('.papochka').css('width', width*0.4);
 $('.papochka').css('height', (width*0.4)*0.57);
 $('.papki').css('width', width);
-
-if(width<height){
-	$(.aaas).attr('src', 'img/mobile1.png');	
-}
-	  if(width>height){
-	$(.aaas).attr('src', 'img/fon1.png');	
-}
 
   	  	$(document).ready(function(){
     $(window).scroll(function(){
