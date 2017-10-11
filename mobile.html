@@ -216,14 +216,13 @@
 
 
   <script>
-  var width = screen.width, w = width * 0.50, h = w / 1.2;
-height = screen.height;	
+  var height = screen.height, width = screen.width, w = width * 0.50, h = w / 1.2;
+	
   w = Math.floor(w);
   h = Math.round(h);
 if(width<height){
 	$(.aaas).attr('src', 'img/mobile1.png');	
-}
-	  if(width>height){
+}else if(width>height){
 	$(.aaas).attr('src', 'img/fon1.png');	
 }
 $('.gallery').css('width', width);
