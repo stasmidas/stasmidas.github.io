@@ -16,7 +16,7 @@
 </head>
 <body>
 	<div class="head_main_page">
-		<img class="aaas" src="img/fon.png" width="100%"  alt="">
+		<img class="aaas"  width="100%"  alt="">
 			</div>
 
 	
@@ -233,7 +233,12 @@ $('.papochka').css('width', width*0.4);
 $('.papochka').css('height', (width*0.4)*0.57);
 $('.papki').css('width', width);
 
-
+if(width<height){
+	$(.aaas).attr('src', 'img/mobile1.png');	
+}
+	  if(width>height){
+	$(.aaas).attr('src', 'img/fon1.png');	
+}
 
   	  	$(document).ready(function(){
     $(window).scroll(function(){
