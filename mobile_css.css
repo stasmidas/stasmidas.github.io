@@ -7,7 +7,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 	
 
-
+.popo{
+	margin-left: -5px;
+}	
 .head_main_page ul li a{
 	color: #0072fe;
 	text-decoration: none;
